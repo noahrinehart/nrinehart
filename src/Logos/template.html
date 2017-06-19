@@ -1,4 +1,5 @@
 <div id="logos">
+  <emailmodal :show.sync="showNewEmailModal"></emailmodal>
   <div class="logos-wrapper">
     <div class="left-logos">
       <a id="logo-purdue" href="https://purdue.edu">
@@ -9,7 +10,7 @@
       <a id="logo-github" href="https://github.com/noahrinehart">
         <icon class="animated fadeInRight" name="github" scale="2"></icon>
       </a>
-      <a id="logo-email" href="mailto:rinehart.noah@gmail.com">
+      <a id="logo-email" @click="showEmailModal = true">
         <icon class="animated fadeInRight" name="envelope" scale="2"></icon>
       </a>
     </div>

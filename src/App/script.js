@@ -6,5 +6,5 @@ export default {
   components: {
     'landing': Landing,
     'logos': Logos,
-  },
+  }
 }
